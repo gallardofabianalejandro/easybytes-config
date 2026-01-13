@@ -1,0 +1,41 @@
+app:
+  infra:
+    openapi:
+      title: Loans Microservice API
+      description: Microservicio de Prestamos - API para la gestion completa de prestamos personales, hipotecarios, vehiculares y comerciales
+      version: 1.0.0
+      contact:
+        name: Loans Support Team
+        email: loans.support@nacionservicios.com.ar
+        url: https://nacionservicios.com.ar/loans
+      security:
+        enabled: true
+        api-key:
+          enabled: true
+          header-name: X-API-Key
+          type: apiKey
+
+# Configuracion de la interfaz de SpringDoc
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+
+  exception:
+    include-stack-trace: false
+    include-cause: true
+    log-level: ERROR
+    sensitive-fields:
+      - password
+      - ssn
+      - creditCard
+      - accountNumber
+      - routingNumber
+      - cvv
+      - pin
+      - email
+    expose-error-codes: true
+    base-error-uri: https://api.nacionservicios.com.ar/errors
