@@ -6,11 +6,12 @@ app:
       version: 1.0.1
       contact:
         name: Support Team
-        email: support@nacionservicios.com.ar
+        email: "{cipher}019f914ac926a23dfda0715ae0b42d34193ab8118ca0f2433e7b3fafee3fe14ac2903a0ed3874a349b1ad68d786f040a"
         url: https://nacionservicios.com.ar
       security:
         enabled: true
         api-key:
           enabled: true
           header-name: X-API-Key
+
           type: apiKey
