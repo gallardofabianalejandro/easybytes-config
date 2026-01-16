@@ -2,7 +2,7 @@ app:
   infra:
     openapi:
       title: Accounts Microservice API
-      description: Microservicio de Cuentas - API para la gestión de clientes producción v2
+      description: Microservicio de Cuentas - API para la gestión de clientes producción v3
       version: 1.0.2
       contact:
         name: Support Team
@@ -15,6 +15,7 @@ app:
           header-name: X-API-Key
 
           type: apiKey
+
 
 
 
